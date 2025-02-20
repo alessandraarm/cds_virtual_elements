@@ -1,0 +1,161 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'PoNum'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'PoNum'
+annotate view ZC_PO_TBL_98 with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  PoNum;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Org;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Vendor;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Status;
+  
+  @EndUserText.label: 'Type'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Type'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Type;
+  
+  @EndUserText.label: 'Reason'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Reason'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Reason'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Reason;
+  
+  @EndUserText.label: 'Refno'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Refno'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Refno'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Refno;
+  
+  @EndUserText.label: 'Delivery Date'
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+    DeliveryDate;
+  
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  CreateBy;
+    
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  CreatedDateTime;
+  
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ChangedDateTime;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  LocalLastChangedBy;
+}

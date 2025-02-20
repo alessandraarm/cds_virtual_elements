@@ -1,0 +1,49 @@
+managed implementation in class ZBP_R_PO_TBL_98 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_PO_TBL_98 alias ZrPoTbl98
+persistent table ZPO_TBL_98
+draft table ZPO_TBL_98_D
+etag master ChangedDateTime
+lock master total etag ChangedDateTime
+authorization master( global )
+
+{
+  field ( mandatory : create )
+   PoNum;
+
+  field ( readonly )
+   CreateBy,
+   CreatedDateTime,
+   ChangedDateTime,
+   LocalLastChangedBy;
+
+  field ( readonly : update )
+   PoNum;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZPO_TBL_98
+  {
+    PoNum = po_num;
+    Org = org;
+    Vendor = vendor;
+    Status = status;
+    Type = type;
+    Reason = reason;
+    Refno = refno;
+    CreateBy = create_by;
+    CreatedDateTime = created_date_time;
+    ChangedDateTime = changed_date_time;
+    LocalLastChangedBy = local_last_changed_by;
+  }
+}

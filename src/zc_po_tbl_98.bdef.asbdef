@@ -1,0 +1,17 @@
+projection implementation in class ZBP_C_PO_TBL_98 unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_PO_TBL_98 alias ZcPoTbl98
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}
